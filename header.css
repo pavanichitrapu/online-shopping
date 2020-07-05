@@ -1,0 +1,258 @@
+body{
+    margin:0px;
+    font-family: 'Open Sans', sans-serif;
+}
+#ham{
+    display:none;
+}
+
+#main-div{
+    margin-left: 6%;
+    margin-right:6%; 
+    display:flex;
+    justify-content:space-around;
+    align-items:center; 
+}
+#logo-div{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;  
+    /*border:1px solid black;*/
+    width:33%;
+}
+#logo-div > a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+#topbar{
+    width:100%;
+   background-color: black;
+   box-shadow: 0 2px 5px #aaa;
+   padding:12px 24px;
+   color:white;
+   position:fixed;
+   top: 0;
+   z-index:2;
+   box-sizing: border-box;   
+  }
+#logo{
+    font-size:35px;
+    text-transform:uppercase;
+    
+}
+#logo span{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:900;
+    letter-spacing:0.1rem;
+    
+}
+#search-box{
+    position:relative;
+    width:28%;
+}
+input{
+    width:100%;
+    border:none;
+    background-color:#eee;
+    padding:8px;
+    border-radius: 18px;
+    outline:none;
+    font-size:14px;
+}
+.fas.fa-search{
+    position:absolute;
+    top:8px;
+    right:0;
+    color:#bbb;
+}
+#cart-div{
+    width:18%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    }
+
+#wishlist{
+    display:flex;
+    color: #fff;
+}
+#cart{
+   display:flex;
+   position: relative;
+}
+.cart-num{
+    font-size: 12px;
+    background-color: rgb(3, 179, 135);
+    color: #fff;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: -60%;
+    left:9%;
+}
+.wishlist-num{
+    font-size: 12px;
+    background-color: rgb(3, 179, 135);
+    color: #fff;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 12%;
+    right:23.5%;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+#cart-count{
+    position:relative;
+    top:0;
+    right:0;
+    }
+#wishlist-count{
+        position:relative;
+        top:0;
+        right:0;
+        }
+
+.cart-text{
+    font-size:14px;
+    color:#fff;
+}
+.cart-text:hover{
+cursor:pointer;
+font-weight:600;
+color:red;
+}
+.fas.fa-user-circle{
+    font-size:30px;
+
+}
+.far{
+    font-size:20px;
+    margin-right:10px;
+    }
+.fa-shopping-cart{
+    margin-right:10px; 
+    color:#fff;
+}
+/* sidebar*/
+
+/*Footer scetion styles*/
+footer{
+   
+    padding:2%;
+    background-color:#1a1a1a;
+    position:relative;
+    bottom:0;
+}
+#footer-row-section{
+    width:55%;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    
+}
+ul{
+    list-style-type: none;
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing:0.7px;
+    
+}
+li{
+    padding:5px;
+    font-size:14px;
+}
+.first-item{
+font-weight:600;
+font-size:16px;
+}
+#edy-logo{
+    position:fixed;
+    right:4%;
+    bottom:10%;
+}
+
+@media (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+    }
+    #main-div{
+        max-width:400px;
+       margin:0;
+    }
+    #search-box{
+        display:none;
+    }
+    
+    #wishlist{
+        display:none;
+    }
+    #cart{
+        display:none;
+    }
+    .fas.fa-user-circle{
+       display:block;
+    }
+    #ham{
+        display:block;
+    }
+    .tophead{
+        display:none;
+    }
+    #topbar{
+        width:500px;
+        margin:0px;
+        display:block;
+    }
+    
+    
+    /* sidebar*/
+    
+    /*Footer scetion styles*/
+    footer{
+    width:100%;
+    display:block;
+
+    }
+    #footer-row-section{
+       
+        margin:0;
+        display:flex;
+        flex-direction: row;
+    }
+    
+    li{
+      
+        font-size:8px;
+    }
+    .first-item{
+        font-size:10px;
+        }
+    
+    #edy-logo{
+        position:fixed;
+        bottom:5%;
+        left:0;
+        
+    }
+    
+
+}

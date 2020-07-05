@@ -1,0 +1,135 @@
+body{
+  overflow-x: hidden;
+    margin:0px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+/* main section styles */
+/* slider*/
+.banner{
+    z-index:1;
+    margin-top:6%;
+    padding-bottom:0;
+    }
+
+.slick-slide {
+    width: 100%;
+    margin:0 80px;
+}
+.slick-dots {
+    list-style-type: none;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.slick-dots li {
+    display: inline-block;
+}
+
+.slick-dots button {
+    display: inline-block;
+    font-size: 0px;
+    color: #ccc;
+    background-color: #ccc;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 0;
+    margin-left: 6px;
+    margin-right: 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+.slick-active button {
+    background-color: #aaa;
+}
+
+/* slider ends*/
+main {
+    min-height: 80vh;
+    box-sizing: border-box;
+    padding-bottom: 8%;
+    margin-left: 8%;
+    margin-right:8%;  
+   
+}
+
+/* card section styles starts */
+.section-header{
+    font-size: 28px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+.section-div{
+    padding-top:6%;
+    
+}
+
+.product-grid {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.main-card-container{
+    
+    max-width: 19%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px; 
+}
+.card-img{
+    width:100%;   
+}
+.card-text-container{
+    padding:0px 15px;
+    
+}
+.product-name{
+    font-size:18px;
+    font-weight:500;
+}
+.brand-name{
+    font-size:13px;
+   color:gray;
+   font-weight:400;
+   margin-top:0;
+}
+.price-info {
+    color:purple;
+    font-weight:600;
+    padding-bottom: 15px;
+    
+}
+/* card section styles ends*/
+
+@media (max-width: 600px) {
+    .banner{
+        margin-top: 20%;
+    }
+ 
+    .slick-slide{
+    height:150px;
+    padding:0;
+    margin:0;
+    }
+
+    .section-header{
+      font-size: 24px;
+     }
+     .main-card-container{
+      max-width:none;
+     }
+     #sidebar{
+         display:none;
+     }
+     #accordian{
+         display:none;
+     }
+  }
+ 

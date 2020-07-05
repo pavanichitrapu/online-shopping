@@ -1,0 +1,134 @@
+#sidebar{
+    
+   position: absolute;
+   top:0;
+    right:0;
+    min-width:400px;
+    background:grey;
+   padding-left:35px;
+   transition: 0.5s;
+    
+}
+
+#sidebar div{
+    padding:12px 24px;
+    text-transform: uppercase;
+    font-size:18px;
+    }
+#sidebar-header{
+    text-align:center;
+    margin-top:20px;
+    text-transform: uppercase;
+}
+#cls-btn{
+   margin:0;
+   padding:0;
+   
+}
+#cls-btn > i{
+    font-size: 25px;
+}
+/*=============================*/
+
+.space{
+    margin: 0;
+    padding: 0;
+}
+
+#accordian {
+   
+position: absolute;
+top:0;
+  right:0;
+    background: #004050;
+    min-width: 300px;
+    height:100vh;
+   /* margin: 50px auto 0 auto;*/
+    color: white;
+    box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.6), 0 0 200px 1px rgba(255, 255, 255, 0.5);
+   
+}
+
+#accordian h3 {
+    transition: 0.5s;
+    background: #003040;
+    background: linear-gradient(#003040, #002535);
+}
+
+#accordian h3 a {
+    padding: 0 10px;
+    
+    font-size: 12px;
+    line-height: 34px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+#sidebar-user{
+    font-size:22px;
+    padding-top:8px;
+}
+
+#accordian h3:hover {
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+}
+
+i {
+    margin-right: 10px;
+   
+}
+
+#accordian li {
+    list-style-type: none;
+  
+}
+
+#accordian ul ul li a,
+#accordian h4 {
+    color: white;
+    
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 27px;
+    display: block;
+    padding: 0 15px;
+    transition: all 0.15s;
+    position: relative;
+}
+
+#accordian ul ul li a:hover {
+    background: #003545;
+    border-left: 5px solid lightgreen;
+}
+
+#accordian ul ul {
+    display: none;
+}
+
+#accordian li.active>ul {
+    display: block;
+}
+
+#accordian ul ul ul {
+    margin-left: 15px;
+    border-left: 1px dotted rgba(0, 0, 0, 0.5);
+}
+
+#accordian a:not(:only-child):after {
+    content: "\f104";
+    font-family: fontawesome;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 14px;
+}
+
+#accordian .active>a:not(:only-child):after {
+    content: "\f107";
+}
+@media (max-width: 600px) {
+    #sidebar{
+        width:400px;
+    }
+    
+}
