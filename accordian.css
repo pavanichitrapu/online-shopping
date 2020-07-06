@@ -36,12 +36,12 @@
 }
 
 #accordian {
-   
-position: absolute;
-top:0;
-  right:0;
+   display:none;
+    position: absolute;
+    top:0;
+    right:0;
     background: #004050;
-    min-width: 300px;
+    max-width: 400px;
     height:100vh;
    /* margin: 50px auto 0 auto;*/
     color: white;
@@ -86,7 +86,6 @@ i {
 #accordian ul ul li a,
 #accordian h4 {
     color: white;
-    
     text-decoration: none;
     font-size: 11px;
     line-height: 27px;
@@ -127,9 +126,12 @@ i {
     content: "\f107";
 }
 @media (max-width: 600px) {
-    #sidebar{
+    #ham{
+        display:block;
+    }
+    #accordian{
+        display: none;
         width:400px;
-        
     }
     
 }
